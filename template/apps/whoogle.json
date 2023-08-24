@@ -4,8 +4,9 @@
 		"Tools"
 	],
 	"description": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
-	"image32": "benbusby/whoogle-search:0.7.3",
-	"image64": "benbusby/whoogle-search:0.7.3",
+	"image_arm32": "benbusby/whoogle-search:latest",
+	"image_arm64": "benbusby/whoogle-search:latest",
+	"image_amd64": "benbusby/whoogle-search:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/whoogle.png",
 	"name": "whoogle",
 	"officialDoc": "https://github.com/benbusby/whoogle-search#g-manual-docker",
@@ -17,7 +18,7 @@
 	"restart_policy": "unless-stopped",
 	"title": "Whoogle",
 	"type": 1,
-	"videoID": 11,
+	"videoID": "N.11",
 	"volumes": [
 		{
 			"bind": "/portainer/Files/AppData/Config/Whoogle",

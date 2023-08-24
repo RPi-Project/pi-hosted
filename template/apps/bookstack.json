@@ -2,7 +2,7 @@
 	"categories": [
 		"Wiki"
 	],
-	"description": "Bookstack is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.",
+	"description": "Bookstack is a free and open source Wiki designed for creating beautiful documentation. Featuring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.",
 	"env": [
 		{
 			"default": "1000",
@@ -45,8 +45,9 @@
 	"officialDoc": "https://www.bookstackapp.com/docs/admin/installation/#docker",
 	"platform": "linux",
 	"repository": {
-		"stackfile32": "stack/bookstack.yml",
-		"stackfile64": "stack/bookstack.yml",
+		"stackfile_arm32": "stack/bookstack.yml",
+		"stackfile_arm64": "stack/bookstack.yml",
+		"stackfile_amd64": "stack/bookstack.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"title": "Bookstack",

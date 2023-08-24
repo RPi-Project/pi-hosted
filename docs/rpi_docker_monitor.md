@@ -124,6 +124,11 @@ GF_SECURITY_ADMIN_PASSWORD=changeme
 GF_USERS_ALLOW_SIGN_UP=false
 ```
 
+### Default Login Inforamtion
+
+User: Admin <br>
+Password: Admin
+
 ### Setup Prometheus as the default data source.
  
 ```
@@ -134,7 +139,7 @@ Grafana > Configuration > Data Sources > Prometheus
 ![image](https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/images/rpi_docker_monitor-DataSource.png)
 
 ### Setup the Dashboard
-Grafana is not preconfigured with dashboard, so you have to import it from the  [json](https://github.com/pi-hosted/pi-hosted/blob/master/configs/dashboard_by_oijkn.json) file.
+Grafana is not preconfigured with dashboard, so you have to import it from the [Arm json](https://github.com/pi-hosted/pi-hosted/blob/master/configs/rpi_dashboard/arm_rpi_dashboard.json) or [PC(AMD) json](https://github.com/pi-hosted/pi-hosted/blob/master/configs/rpi_dashboard/amd_rpi_dashboard.json) file.
 
 ```
 Grafana > + > Import 
@@ -142,7 +147,7 @@ Grafana > + > Import
 
 ![image](https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/images/rpi_docker_monitor-Dashboard-Menu-Import.png)
 
-Now we open the [json](https://github.com/pi-hosted/pi-hosted/blob/master/configs/dashboard_by_oijkn.json) file and Click on the "raw" button to copy the content from the json file.
+Now we open the [Arm json](https://github.com/pi-hosted/pi-hosted/blob/master/configs/rpi_dashboard/arm_rpi_dashboard.json) or [PC(AMD) json](https://github.com/pi-hosted/pi-hosted/blob/master/configs/rpi_dashboard/amd_rpi_dashboard.json) file and Click on the "raw" button to copy the content from the json file.
 
 (!["raw" button](https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/images/rpi_docker_monitor-Raw.png))
 

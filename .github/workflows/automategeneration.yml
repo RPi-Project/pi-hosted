@@ -3,13 +3,14 @@ name: joinApps.sh
 on:
   push:
     branches:
-    - "master"
+    - '**'
   #schedule:
   #- cron:  '15 0 * * *'
 env:
  appsfolder: template/apps
- pt32: template/portainer-v2-arm32.json
- pt64: template/portainer-v2-arm64.json
+ ptArm32: template/portainer-v2-arm32.json
+ ptArm64: template/portainer-v2-arm64.json
+ ptAmd64: template/portainer-v2-amd64.json
  README: docs/README.md
  README_TEMPLATE: build/templates/template_README.md
  TOOLSREADME: tools/README.md
@@ -50,10 +51,11 @@ jobs:
       run: build/generators/generateToolsREADME.sh
     - name: Commit files
       run: |
-        git config --local user.email "workflow@github.com"
-        git config --local user.name "GitHub Workflow"
-        git add -- "$pt32"
-        git add -- "$pt64"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+        git add -- "$ptArm32"
+        git add -- "$ptArm64"
+        git add -- "$ptAmd64"
         git add ./pi-hosted_template/template/portainer-v2.json
         git add -- "$README"
         git add -- "$TOOLSREADME"

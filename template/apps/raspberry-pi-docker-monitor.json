@@ -21,13 +21,14 @@
 	],
 	"preInstallScript": "rpi_docker_monitor.sh",
 	"repository": {
-		"stackfile32": "stack/raspberrypi-monitoring.yml",
-		"stackfile64": "stack/raspberrypi-monitoring.yml",
+		"stackfile_arm32": "stack/raspberrypi-monitoring.yml",
+		"stackfile_arm64": "stack/raspberrypi-monitoring.yml",
+		"stackfile_amd64": "stack/raspberrypi-monitoring.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"restart_policy": "unless-stopped",
 	"title": "Raspberry Pi Docker Monitor",
 	"type": 3,
-	"videoID": 7,
+	"videoID": "N.07",
 	"webpage": "https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md"
 }
